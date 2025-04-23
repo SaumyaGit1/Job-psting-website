@@ -1,0 +1,11 @@
+import express from "express";
+const router=express.Router();
+import application from "./application.js";
+import job from "./jobs.js";
+import internship from "./internshhips.js";
+import admin from "./admin.js";
+router.use("/admin",admin);
+router.use("/application",application);
+router.use("/job",job);
+router.use("/internship",internship);
+export default router;
